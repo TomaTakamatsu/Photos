@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/toma/Library/Mobile Documents/com~apple~CloudDocs/Rutgers/Rutgers Schoolwork/Software Methodology/javafx-sdk-24/lib/**/*.jar"
+    ]
+}
