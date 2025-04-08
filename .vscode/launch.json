@@ -15,7 +15,7 @@
             "type": "java",
             "name": "PhotoApp",
             "request": "launch",
-            "mainClass": "src.PhotoApp",
+            "mainClass": "src.app.PhotoApp",
             "projectName": "Photos_6b182ca2",
             "vmArgs": "--module-path \"/Users/toma/Development/javafx-sdk-24/lib\" --add-modules javafx.controls,javafx.fxml,javafx.graphics"
         }

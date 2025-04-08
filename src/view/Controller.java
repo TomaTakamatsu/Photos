@@ -1,4 +1,4 @@
-package src;
+package src.view;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
