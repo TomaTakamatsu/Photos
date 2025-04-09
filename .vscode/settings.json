@@ -1,4 +1,5 @@
 {
+    "java.project.sourcePaths": ["src"],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/Users/toma/Development/javafx-sdk-24/lib/**/*.jar"

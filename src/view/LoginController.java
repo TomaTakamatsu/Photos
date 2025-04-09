@@ -1,4 +1,4 @@
-package src.view;
+package view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,20 +22,13 @@ public class LoginController {
 
     public void Login(ActionEvent e) throws Exception{
         if (txtUser.getText().equals("admin")){
-            lblStatus.setText("Logged in");
-
-            Stage loginStage = (Stage) btnLogin.getScene().getWindow();
-            loginStage.close();
-
-            Stage photosStage = new Stage();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/main.fxml"));
+            Stage stage = (Stage) btnLogin.getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("admin.fxml"));
             Parent root = loader.load();
-            MainController controller = loader.getController();
-
             Scene scene = new Scene(root, 600, 400);
-            photosStage.setTitle("Photos App");
-            photosStage.setScene(scene);
-            photosStage.show();
+            stage.setTitle("Admin");
+            stage.setScene(scene);
+            stage.show();
         }
         else{
             lblStatus.setText("Login failed");
