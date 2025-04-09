@@ -9,19 +9,18 @@ import javafx.scene.image.*;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import src.view.Controller;
+import src.view.LoginController;
 public class PhotoApp extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/mainscene.fxml"));
+    public void start(Stage loginStage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/login.fxml"));
         Parent root = loader.load();
-        Controller controller = loader.getController();
-        controller.setMainWindow(primaryStage);
+        LoginController controller = loader.getController();
 
-        Scene scene = new Scene(root, 390, 270);
-        primaryStage.setTitle("Photo App");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        Scene scene = new Scene(root, 600, 400);
+        loginStage.setTitle("Login Menu");
+        loginStage.setScene(scene);
+        loginStage.show();
     }
 
     public static void main(String[] args) {
