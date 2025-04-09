@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Photos",
+            "request": "launch",
+            "mainClass": "app.Photos",
+            "projectName": "Photos_6b182ca2",
+            "vmArgs": "--module-path \"/path/to/javafx-sdk-24/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
