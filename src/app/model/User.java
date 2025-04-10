@@ -8,12 +8,12 @@ public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String username;
-    private List<Album> albums;
+    private List<Album> allAlbums;
     private List<Photo> allPhotos;
 
     public User(String username) {
         this.username = username;
-        this.albums = new ArrayList<>();
+        this.allAlbums = new ArrayList<>();
         this.allPhotos = new ArrayList<>();
     }
 
@@ -22,7 +22,7 @@ public class User implements Serializable {
     }
 
     public List<Album> getAllAlbums() {
-        return albums;
+        return allAlbums;
     }
 
     public List<Photo> getAllPhotos() {
@@ -30,11 +30,11 @@ public class User implements Serializable {
     }
 
     public void createAlbum(Album album) {
-        albums.add(album);
+        allAlbums.add(album);
     }
 
     public void deleteAlbum(Album album) {
-        albums.remove(album);
+        allAlbums.remove(album);
     }
 
     public void addPhoto(Photo photo) {
@@ -45,10 +45,9 @@ public class User implements Serializable {
 
     public void removePhoto(Photo photo) {
         allPhotos.remove(photo);
-
         // Should make sure to delete from all albums also
-        for (Album album : albums) {
-            
+        for (Album album : allAlbums) {
+            // album.getPhotos().remove(photo);
         }
     }
 }

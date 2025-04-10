@@ -9,12 +9,12 @@ import javafx.scene.image.*;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import view.LoginController;
+import view.controller.LoginController;
 
 public class Photos extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/fxml/login.fxml"));
         Parent root = loader.load();
         LoginController controller = loader.getController();
 

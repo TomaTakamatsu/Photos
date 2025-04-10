@@ -1,4 +1,4 @@
-package view;
+package view.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -88,7 +88,7 @@ public class AdminController {
         // Loading the login screen again
         try {
             Stage stage = (Stage) logoutButton.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/fxml/login.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root, 600, 400);
             stage.setTitle("Login Menu");

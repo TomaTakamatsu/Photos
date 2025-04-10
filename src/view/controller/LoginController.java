@@ -1,4 +1,4 @@
-package view;
+package view.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,7 +25,7 @@ public class LoginController {
         // Loading admin panel
         if (txtUser.getText().equals("admin")){
             Stage stage = (Stage) btnLogin.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("admin.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/fxml/admin.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root, 600, 400);
             stage.setTitle("Admin");
