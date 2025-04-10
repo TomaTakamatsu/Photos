@@ -21,6 +21,8 @@ public class LoginController {
     private Button btnLogin;
 
     public void Login(ActionEvent e) throws Exception{
+
+        // Loading admin panel
         if (txtUser.getText().equals("admin")){
             Stage stage = (Stage) btnLogin.getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("admin.fxml"));
